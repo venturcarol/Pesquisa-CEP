@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pesquisa Endereço</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<script src="app.js"></script>
+</head>
+<body>
+
+	<header>
+      <nav class="navbar navbar-light bg-primary mb-4">
+	    <div class="container">
+		  <div class="navbar-brand mb-0 h1">
+			<h3>Pesquisa Endereço</h3>
+		  </div>
+		</div>
+	  </nav>
+	</header>
+
+	<section class="caixa">
+	  <div class="container">
+	    <div class="row form-group">
+		  <div class="col-sm-3">
+		    <input type="text" class="form-control" placeholder="CEP" onblur="getDadosEnderecoPorCEP(this.value)"/>
+		  </div>
+		  <div class="col-sm-9">
+		    <input type="text" class="form-control" placeholder="Endereço" readonly id="endereco">
+		  </div>
+		  </div>
+
+		  <div class="row form-group">
+		    <div class="col-sm-6">
+		      <input type="text" class="form-control mt-2" placeholder="Bairro" readonly id="bairro">
+			</div>
+			<div class="col-sm-4">
+			  <input type="text" class="form-control mt-2" placeholder="Cidade" readonly id="cidade">
+			</div>
+
+			<div class="col-sm-2">
+			  <input type="text" class="form-control mt-2" placeholder="UF" readonly id="uf">
+			</div>
+		  </div>
+		</div>
+	</section>
+</body>
+</html>
